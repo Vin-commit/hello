@@ -1,7 +1,7 @@
 /* This source assembler file can generate an executable file with ‘makefile_hello’ file. */
 
     .data
-msg :    .asciz "Salut tout le monde !\n"
+msg :    .asciz "Hello everybody !\n"
 len = . - msg
 .bss
 .text

@@ -1,0 +1,14 @@
+# To use this makefile file, type: make -f makefile_hello
+# Use -f option to force (and run in this case) the make command.
+
+hello :        hello.o
+		ld -o hello hello.o
+
+hello.o :       hello.s
+		as -o hello.o hello.s
+ 
+clean :
+		rm -fv hello.o
+
+
+
